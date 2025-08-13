@@ -28,6 +28,7 @@ you can use built container from DockerHub or build your own in next section
 ```bash
 docker run --rm -it -p 5800:5800 tqwee/i2pd-firefox:latest
 ```
+**Access the GUI:** Open your web browser and navigate to: **`http://localhost:5800`**
 
 ## Quick Start
 
