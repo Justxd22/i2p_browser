@@ -34,7 +34,7 @@ docker run --rm -it -p 5800:5800 tqwee/i2pd-firefox:latest
 
 1.  **Clone and Build the Docker Image:**
     ```bash
-    git clone https://github.com/Justxd22/i2p_browser
+    git clone https://github.com/Justxd22/i2p_browser && cd i2p_browser
     docker build -t i2pd-firefox .
     ```
 
