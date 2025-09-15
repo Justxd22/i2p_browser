@@ -8,7 +8,7 @@ RUN strip membarrier_check
 # Pull base image.
 FROM jlesage/baseimage-gui:alpine-3.22-v4.9.0
 
-ARG FIREFOX_VERSION=140.0.4-r1
+ARG FIREFOX_VERSION=142.0-r0
 WORKDIR /tmp
 
 # Install Firefox.
