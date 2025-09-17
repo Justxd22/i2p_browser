@@ -65,14 +65,14 @@ By default, the container is ephemeral. To save data, you can mount specific hos
 ### **Save Nothing Max Privacy** Enabled by default
 
 ```bash
-docker run -it --rm -p 5800:5800 firefox-i2pd
+docker run -it --rm -p 5800:5800 i2pd-firefox
 ```
 
 ### **Fully Persistent**
 Mount a single host directory to `/config`. Everything (I2P data, profile, downloads) will be saved.
 
 ```bash
-docker run -it --rm -p 5800:5800 -v $(pwd)/my-firefox-data:/config:rw firefox-i2pd
+docker run -it --rm -p 5800:5800 -v $(pwd)/my-firefox-data:/config:rw i2pd-firefox
 ```
 
 ### **Only save your Firefox profile and downloads**, but get a fresh I2P identity every time:
@@ -81,7 +81,7 @@ docker run -it --rm -p 5800:5800 -v $(pwd)/my-firefox-data:/config:rw firefox-i2
 docker run -it --rm -p 5800:5800 \
     -v $(pwd)/my-firefox-profile:/config/profile:rw \
     -v $(pwd)/my-firefox-downloads:/config/downloads:rw \
-    firefox-i2pd
+    i2pd-firefox
 ```
 
 ### **Only save the I2P bootstrap data** for fast network connection, but use a fresh Firefox profile every time:
@@ -89,7 +89,7 @@ docker run -it --rm -p 5800:5800 \
 ```bash
 docker run -it --rm -p 5800:5800 \
     -v $(pwd)/my-i2pd-data:/config/i2pd:rw \
-    firefox-i2pd
+    i2pd-firefox
 ```
 
 
